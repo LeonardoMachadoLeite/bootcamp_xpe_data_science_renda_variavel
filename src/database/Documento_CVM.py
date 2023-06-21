@@ -27,7 +27,7 @@ class Documento_CVM(object):
         dia = data[:2]
         mes = data[2:4]
         ano = data[-4:]
-        return f"{ano}-{mes}-{dia}"
+        return f"{dia}-{mes}-{ano}"
 
     def get_xml_name(self):
         return f"{self.cod_cvm}{self.tipo}{self.get_data_doc()}v{self.versao}.xml"
